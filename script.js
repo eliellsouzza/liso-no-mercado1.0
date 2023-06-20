@@ -1,32 +1,31 @@
-class Produto{
-    constructor() {
-        this.id = 0;
-        this.name = "";
-        this.valor = 0;
-    }
+const btn = document.querySelector("#send");
 
-    adicionar() {
+/* campo nome do produto */
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
 
+  const name = document.querySelector("#name");
+  const value = name.value;
 
-        alert('vamos adicionar um produto');
+  console.log(value);
+});
 
-        
-    }    
+/* campo de quantidade */
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
 
+  const qtd = document.querySelector("#qtd");
+  const value = qtd.value;
 
-    excluir() {
+  console.log(value);
+});
 
+/* campo de preço */
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
 
+  const preco = document.querySelector("#preco");
+  const value = preco.value;
 
-        alert('item deletado')
-        
-
-
-    }
-}
-
-const produto = new Produto()
-
-
-
- 
+  console.log(value);
+});

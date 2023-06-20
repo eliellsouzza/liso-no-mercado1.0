@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <title>TO LISO NO MERCADO</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <link href="style.css" rel="stylesheet" />
   </head>
@@ -37,50 +37,70 @@
         </div>
       </div>
     </nav>
-
+    <!-- CONTAINER COM CAMPOS PARA ADICIONAR ITEM -->
     <main>
       <div class="mainContainer">
-
         <div class="addProduct">
+          <!-- CAMPO NOME DO ITEM -->
+          <div>
+            <input
+              class="product1"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="PRODUTO:"
+            />
+          </div>
+
+          <!-- CAMPO QUANTIDADE DE ITENS  -->
+          <div>
+            <input
+              class="product2"
+              type="number"
+              name="qtd"
+              id="qtd"
+              placeholder="QTD:"
+            />
+          </div>
+
+          <!-- CAMPO PREÇO DO ITEM -->
+          <div>
+            <input
+              class="product3"
+              type="text"
+              name="preco"
+              id="preco"
+              placeholder="PREÇO:"
+            />
+          </div>
+
+          <!-- BOTÃO ADICIONAR -->
+          <button class="btnAdd" type="submit" id="send" value="Enviar">
+            <img
+              src="./assets/adicionar-botao.png"
+              alt="botão de adicionar"
+              width="30"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="boxProduct">
+        <div class="product0"><b>ID:</b></div>
         <div class="product1"><b>PRODUTO:</b></div>
         <div class="product2"><b>QTD:</b></div>
         <div class="product3"><b>PREÇO:</b></div>
-        <div class="btnAdd">
-          <img
-            src="./assets/adicionar-botao.png"
-            alt="botão de adicionar"
-            width="30" />
-        </div>
-    </div>
-
-<div class="boxProduct">
- 
-    <div class="product0"><b>ID:</b></div>
-    <div class="product1"><b>PRODUTO:</b></div>
-    <div class="product2"><b>QTD:</b></div>
-    <div class="product3"><b>PREÇO:</b></div>
-
-</div>
- 
-
-
       </div>
     </main>
-
-    <!--    <div class="card">
-        <h1>to liso no mercado</h1>
-        <button onclick="produto.adicionar()">Adicionar</button>
-        <button onclick="produto.excluir()">Excluir</button>
-    </div> -->
 
     <footer>
       <div class="footerContainer">
         <h1>TERMOS E CONDIÇÕES DE USO:</h1>
-        <h2>PARA SE FAZER O USO DESSE SISTEMA SÓ É NECESSÁRIO ESTAR LISO OU SEJA COM POUCO  DINHEIRO!</h2>
+        <h2>
+          PARA SE FAZER O USO DESSE SISTEMA SÓ É NECESSÁRIO ESTAR LISO OU SEJA
+          COM POUCO DINHEIRO!
+        </h2>
       </div>
     </footer>
   </body>
 </html>
-
-
-
